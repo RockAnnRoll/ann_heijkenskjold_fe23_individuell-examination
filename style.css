@@ -84,8 +84,55 @@ body {
 
 /* -------------MAIN------------- */
 
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 1000px;
+  margin: auto;
+  gap: 30px;
+}
+
+.main__title {
+  grid-column: span 4;
+  text-align: center;
+  font-size: 53px;
+  margin-top: 40px;
+}
+
+.main__card--small {
+  background-color: #5c5c5c;
+  grid-column: span 1;
+  min-height: 383px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.main__card--big {
+  background-color: #5c5c5c;
+  grid-column: span 2;
+  min-height: 349px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.main__button {
+  padding: 12px 30px;
+}
+
 /* -------------FOOTER------------- */
 .footer {
   background-image: url("footer.png");
-  min-height: 60vh;
+  min-height: 556px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer__contact {
+  background-color: white;
+  min-height: 434px;
+  min-width: 417px;
+  margin-right: 211px;
 }
