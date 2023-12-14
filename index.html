@@ -12,11 +12,11 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="body">
     <nav class="nav">
       <img class="nav__img" src="zocom.png" />
       <ul class="nav__list">
-        <li id="nav__listitem--bold">HOME</li>
+        <li id="nav__listitem--black">HOME</li>
         <li class="nav__listitem">HOW IT WORKS</li>
         <li class="nav__listitem">FEATURES</li>
         <li class="nav__listitem">PRESS</li>
@@ -24,6 +24,7 @@
         <li class="nav__listitem">CONTACT</li>
       </ul>
       <button class="nav__button">GET A QUOTE</button>
+      <img class="nav__meny" src="meny.png" />
     </nav>
     <header class="header">
       <h2 class="header__title">Download our App</h2>
@@ -41,23 +42,88 @@
     </header>
     <main class="main">
       <h2 class="main__title">Our products</h2>
+
       <article class="main__card--small">
-        <img class= main__img src="mountain.png">Cap</article>
+        <img class="main__img" src="mountain.png" />
+        <h4 class="main__object">Green Cap</h4>
+        <p class="main__price">US$29</p>
+      </article>
+
       <article class="main__card--small">
-        <img class= main__img src="Bmountain.png">Zara shirt</article>
+        <img class="main__img" src="mountain.png" />
+        <h4 class="main__object">Zara shirt</h4>
+        <p class="main__price">US$19.90</p>
+      </article>
       <article class="main__card--small">
-        <img class= main__img src="mountain.png">Nike Air</article>
+        <img class="main__img" src="mountain.png" />
+        <h4 class="main__object">Nike Air</h4>
+        <p class="main__price">US$34</p>
+      </article>
       <article class="main__card--small">
-        <img class= main__img src="mountain.png">Nerd tshirt</article>
+        <img class="main__img" src="mountain.png" />
+        <h4 class="main__object">Nerd tshirt</h4>
+        <p class="main__price">US$9.99</p>
+      </article>
+
       <article class="main__card--big">
-       nn<button class="main__button">CHECK IT OUT</button></article>
+        <h3 class="main__title--small">COLLECTION</h3>
+        <p class="main__text">Summer 2021</p>
+        <button class="main__button">CHECK IT OUT</button>
+      </article>
       <article class="main__card--big">
-        nn <button class="main__button">CHECK IT OUT</button></article>
+        <h3 class="main__title--small">COLLECTION</h3>
+        <p class="main__text">Summer 2021</p>
+        <button class="main__button">CHECK IT OUT</button>
+      </article>
     </main>
 
     <footer class="footer">
       <aside class="footer__contact">
         <h2 class="footer__title">Contact us</h2>
+
+        <h3 class="footer__subtitle">We´d love to hear from you</h3>
+
+        <form class="footer__form">
+          <label for="Name"> Name</label>
+          <input
+            class="footer__input"
+            type="text"
+            id="Name"
+            placeholder="Write your name.."
+          />
+
+          <label for="Email">E-mail</label>
+          <input
+            class="footer__input"
+            type="email"
+            id="Email"
+            placeholder="Write your E-mail.."
+            pattern=".+@example\.com"
+          />
+
+          <label for="Phone">Phone number</label>
+          <input
+            class="footer__input"
+            type="tele"
+            id="Phone"
+            placeholder="Write your phone number.."
+            maxlength="8"
+            minlength="8"
+          />
+
+          <label for="Address"> Address</label>
+          <input
+            class="footer__input"
+            type="text"
+            id="Address"
+            placeholder="Write your address"
+          />
+
+          <label for="Message"> Message</label>
+          <input type="footer__input " id="Message" style="min-height: 70px" />
+
+          <input class="footer__button" type="submit" value="SEND REQUEST" />
+        </form>
       </aside>
     </footer>
   </body>
